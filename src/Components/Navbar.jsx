@@ -58,9 +58,9 @@ const Menu = [
 
 const Navbar = () => {
   return (
-    <div className="bg-white duration-200 relative z-40 ">
+    <div className="bg-red duration-200 relative z-40 ">
         {/* lower Navbar */}
-        <div className="py-4 bg-white flex justify-center px-10">
+        <div className="py-4 bg-orange-600 flex justify-center px-10">
             <div className="container flex justify-between items-center   ">
                 {/*menu */}
                 <a href="" className='sm:hidden'>
@@ -84,16 +84,17 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                {/* search bar, user and order button */}
-                <div className="flex justify-between items-center gap-4 ">
-                    {/* search bar */}
-                    <div className='relative group  '>
-                        <input type="text" placeholder='search'
-                        className="w-[100px] sm:w-[200px] group-hover:w-[300px] transition-all duration-300 rounded-full border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-primary dark:border-gray-500 dark:bg-gray-800 "
-                        />
-                        <IoMdSearch className="text-gray-500 group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3"
-                        />
-                    </div>
+                {/* search bar phone*/}
+                <div className='relative'>
+                <IoMdSearch className="sm:hidden text-2xl  text-gray-500 group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3" />
+                </div>
+                {/* search bar pc*/}
+                <div className='relative group hidden sm:block'>
+                    <input type="text" placeholder='search'
+                        className="w-[200px] sm:w-[200px] group-hover:w-[300px] transition-all duration-300 rounded-full border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-primary dark:border-gray-500 dark:bg-gray-800 "
+                    />
+                    <IoMdSearch className="text-gray-500 group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3"
+                    />
                 </div>
             </div>
         </div>
