@@ -58,36 +58,16 @@ const Menu = [
 
 const Navbar = () => {
   return (
-    <div className="bg-white duration-200 relative z-40">
-        {/* upper Navbar */}
-        <div>
-          <div className="bg-black text-white py-2 flex items-center gap-2 justify-center">
-            <span>
-              <FaCircle className='text-green-500 text-xs'/>  
-            </span> 
-            livraison gratuite
-          </div>
-        </div>
-        {/* middle Navbar */}
-        <div className='border-b-2'>
-          <div className="container bg-white text-black py-0.5  flex items-center gap-2 justify-end">
-            <a href="#">
-              <FaInstagram className="text-xl" />  
-            </a>
-            <a href="#">
-              <FaFacebook className="text-xl" />
-            </a>
-          </div>
-        </div>
+    <div className="bg-white duration-200 relative z-40 ">
         {/* lower Navbar */}
-        <div className="bg-white py-4">
-            <div className="container flex justify-between items-center ">
+        <div className="py-4 bg-white flex justify-center px-10">
+            <div className="container flex justify-between items-center   ">
                 {/*menu */}
                 <a href="" className='sm:hidden'>
                   <IoMenuOutline className='text-5xl '/>
                 </a>
                 {/* logo */}
-                <div className="flex  items-center gap-16">
+                <div className="flex  items-center gap-16 ">
                     <a href="#" className="font-bold text-2xl sm:text-3xl flex gap-2">
                       Md Global
                     </a>
@@ -105,7 +85,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 {/* search bar, user and order button */}
-                <div className="flex justify-between items-center gap-4">
+                <div className="flex justify-between items-center gap-4 ">
                     {/* search bar */}
                     <div className='relative group hidden sm:block'>
                         <input type="text" placeholder='search'
@@ -114,20 +94,6 @@ const Navbar = () => {
                         <IoMdSearch className="text-gray-500 group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3"
                         />
                     </div>
-                    {/* user button */}
-                    <button
-                    onClick={() => handleOrderPopup()}
-                    className=" "
-                    >
-                      <CiUser className="text-3xl text-black drop-shadow-sm cursor-pointer" />
-                    </button>
-                    {/* order button */}
-                    <button
-                    onClick={() => handleOrderPopup()}
-                    className=" "
-                    >
-                      <HiOutlineShoppingBag className="text-3xl text-black drop-shadow-sm cursor-pointer" />
-                    </button>
                 </div>
             </div>
         </div>
