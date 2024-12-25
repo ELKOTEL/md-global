@@ -60,7 +60,7 @@ const Navbar = () => {
   return (
     <div className="bg-red duration-200 relative z-40 ">
         {/* lower Navbar */}
-        <div className="py-4 bg-orange-600 flex justify-center px-10">
+        <div className="py-4 bg-white flex justify-center px-10">
             <div className="container flex justify-between items-center   ">
                 {/*menu */}
                 <a href="" className='sm:hidden'>
@@ -68,7 +68,7 @@ const Navbar = () => {
                 </a>
                 {/* logo */}
                 <div className="flex  items-center gap-16 ">
-                    <a href="#" className="font-bold text-2xl sm:text-3xl flex gap-2">
+                    <a href="#" className="font-bold text-xl sm:text-3xl flex gap-2">
                       Md Global
                     </a>
                     <ul className="sm:flex hidden gap-4">
@@ -86,7 +86,7 @@ const Navbar = () => {
                 </div>
                 {/* search bar phone*/}
                 <div className='relative'>
-                <IoMdSearch className="sm:hidden text-2xl  text-gray-500 group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3" />
+                <IoMdSearch className="sm:hidden text-4xl   group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3" />
                 </div>
                 {/* search bar pc*/}
                 <div className='relative group hidden sm:block'>

@@ -4,8 +4,8 @@ import React from 'react'
 const BadgeCard = ({alt, img, product, stock}) => {
   console.log('Stock:', stock); // Add this for debugging
   return (
-    <div className=" flex flex-col w-fit border-black border rounded-md p-1">
-        <div className='bg-orange-700  rounded-t-md'>
+    <div className=" flex flex-col w-fit border-black border rounded-md ">
+        <div className=' rounded-t-md'>
             <img src={img} alt={alt}  className=''/>
         </div>
         <div className='bg-black text-white flex justify-center '>
