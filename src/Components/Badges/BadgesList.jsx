@@ -8,35 +8,35 @@ const products = [
       alt:"img" ,
       img: Img,
       product: "Médecin dentiste",
-      stock: "8"
+      stock: 8
     },
     {
       id: 2,
       alt:"img" ,
       img: Img,
       product: "Médecin",
-      stock: "4"
+      stock: 4
     },
     {
       id: 3,
       alt:"img" ,
       img: Img,
       product: "Infirmier",
-      stock: "25"
+      stock: 25
     },
     {
       id: 3,
       alt:"img" ,
       img: Img,
       product: "Steg",
-      stock: "5"
+      stock: 5
     },
     {
       id: 4,
       alt:"img" ,
       img: Img,
       product: "Physiothérapeute",
-      stock: "2"
+      stock: 2
     },
   ];
   
