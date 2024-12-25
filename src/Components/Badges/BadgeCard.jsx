@@ -54,38 +54,38 @@ const BadgeCard = ({ alt, img, product, stock: initialStock }) => {
 
       {/* Modal for Stock Update */}
       {showModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-          <div className="bg-white p-6 rounded-md w-1/3 relative">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex  justify-center items-center">
+          <div className="bg-white p-6 rounded-md size-full lg:h-fit lg:w-fit relative flex flex-col items-center justify-center  lg:block  ">
             {/* Close Icon */}
             <AiOutlineClose
               className="absolute top-2 right-2 text-2xl cursor-pointer"
               onClick={toggleModal}
             />
 
-            <h2 className="text-xl font-bold mb-4">Update Stock</h2>
+            <h2 className="text-xl font-bold mb-8">Update Stock</h2>
 
             {/* Initial Add/Subtract Options */}
             {isAddSelected === null && (
-              <div className="flex justify-between mb-4">
+              <div className="flex  flex-col gap-2   mb-4">
                 <button
-                  className="bg-green-500 text-white px-4 py-2 rounded-md w-1/3"
+                  className="bg-green-500 text-white px-4 py-2 rounded-md w-40 "
                   onClick={() => setIsAddSelected('add')}
                 >
-                  Add Stock
+                  Add 
                 </button>
                 <button
-                  className="bg-red-500 text-white px-4 py-2 rounded-md w-1/3"
+                  className="bg-red-500 text-white px-4 py-2 rounded-md w-40 "
                   onClick={() => setIsAddSelected('subtract')}
                 >
-                  Subtract Stock
+                  Sub
                 </button>
               </div>
             )}
 
             {/* Add Stock Custom Input */}
             {isAddSelected === 'add' && (
-              <div>
-                <h3 className="font-semibold">Add Stock</h3>
+              <div className='flex flex-col items-center'>
+                <h3 className="font-semibold">Add To Stock</h3>
                 <div className="flex items-center mb-2">
                   <input
                     type="number"
@@ -100,7 +100,7 @@ const BadgeCard = ({ alt, img, product, stock: initialStock }) => {
                   className="bg-green-500 text-white px-4 py-2 rounded-md"
                   onClick={() => handleStockChange('add')}
                 >
-                  Confirm Add
+                  Confirm
                 </button>
               </div>
             )}
